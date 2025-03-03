@@ -1,5 +1,6 @@
 import {Tabs} from "expo-router";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import {Avatar, AvatarBadge, AvatarFallbackText, AvatarImage} from "@/components/ui/avatar";
 
 export default function TabLayout() {
     return (
@@ -8,7 +9,7 @@ export default function TabLayout() {
                 name="(home)"
                 options={{
                     title: 'Home',
-                    tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+                    tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color}/>,
                 }}
             />
             <Tabs.Screen
