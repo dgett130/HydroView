@@ -13,7 +13,15 @@ export default function DrawerLayout() {
               options={{
                   title: 'Home',
                   drawerLabel: 'Home',
-              }} />
+              }}
+          />
+          <Drawer.Screen
+              name="(settings)"
+              options={{
+                  title: 'Impostazioni',
+                  drawerLabel: 'Impostazioni',
+              }}
+          />
       </Drawer>
     );
 }

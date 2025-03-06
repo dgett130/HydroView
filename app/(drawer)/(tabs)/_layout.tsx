@@ -13,10 +13,17 @@ export default function TabLayout() {
                 }}
             />
             <Tabs.Screen
-                name="settings"
+                name="(profile)"
+                options={{
+                    title: 'Profilo',
+                    tabBarIcon: ({ color }) => <FontAwesome size={28} name="user" color={color} />,
+                }}
+            />
+            <Tabs.Screen
+                name="(settings)"
                 options={{
                     title: 'Settings',
-                    tabBarIcon: ({ color }) => <FontAwesome size={28} name="bars" color={color} />,
+                    tabBarIcon: ({color}) => <FontAwesome size={28} name="wrench" color={color} />
                 }}
             />
         </Tabs>
