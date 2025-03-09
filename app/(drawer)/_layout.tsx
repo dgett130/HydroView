@@ -16,7 +16,7 @@ export default function DrawerLayout() {
               }}
           />
           <Drawer.Screen
-              name="(settings)"
+              name="d-settings"
               options={{
                   title: 'Impostazioni',
                   drawerLabel: 'Impostazioni',
