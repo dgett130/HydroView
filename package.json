@@ -10,7 +10,8 @@
     "web": "DARK_MODE=media expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
-    "prepare": "husky"
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
   },
   "jest": {
     "preset": "jest-expo"
