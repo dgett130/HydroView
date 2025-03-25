@@ -39,5 +39,5 @@ app-example
 
 .husky/
 commitlint.config.js
-package-lock.json
-yarn.lock
+./package-lock.json
+./yarn.lock
