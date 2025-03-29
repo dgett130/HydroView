@@ -2,6 +2,7 @@
   "name": "hydroview",
   "main": "expo-router/entry",
   "version": "0.0.1",
+  "description": "Hydroview",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
