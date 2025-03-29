@@ -5,13 +5,22 @@ import {
   AvatarFallbackText,
   AvatarImage,
 } from "@/components/ui/avatar";
+import { DrawerProvider, useDrawer } from "@/app/context/DrawerContext";
 
-export default function DrawerLayout() {
+function DrawerLayoutContent() {
+  const { setSelectedDrawer } = useDrawer();
+
   return (
     <Drawer
       screenOptions={{
         headerShown: true,
         swipeEdgeWidth: 0,
+      }}
+      screenListeners={{
+        drawerItemPress: (e) => {
+          const route = e.target!.split('/').pop() || 'home';
+          setSelectedDrawer(route);
+        },
       }}
     >
       <Drawer.Screen
@@ -29,5 +38,13 @@ export default function DrawerLayout() {
         }}
       />
     </Drawer>
+  );
+}
+
+export default function DrawerLayout() {
+  return (
+    <DrawerProvider>
+      <DrawerLayoutContent />
+    </DrawerProvider>
   );
 }
