@@ -1,12 +1,5 @@
-import { Tabs } from "expo-router";
+import {Tabs} from "expo-router";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import {
-  Avatar,
-  AvatarBadge,
-  AvatarFallbackText,
-  AvatarImage,
-} from "@/components/ui/avatar";
-import { useDrawer } from "@/app/context/DrawerContext";
 
 const homeTabs = [
   {
@@ -20,38 +13,18 @@ const homeTabs = [
     icon: "user",
   },
   {
-    name: "(settings)",
-    title: "Settings",
-    icon: "wrench",
-  },
-];
-
-const settingsTabs = [
-  {
-    name: "(general)",
-    title: "Generale",
-    icon: "gear",
-  },
-  {
     name: "(notifications)",
-    title: "Notifiche",
+    title: "Notifications",
     icon: "bell",
-  },
-  {
-    name: "(privacy)",
-    title: "Privacy",
-    icon: "lock",
   },
 ];
 
 export default function TabLayout() {
-  const { selectedDrawer } = useDrawer();
-
-  const tabs = selectedDrawer === 'd-settings' ? settingsTabs : homeTabs;
-
+  console.log('Rendering TabLayout');
+  
   return (
     <Tabs screenOptions={{ headerShown: false, tabBarActiveTintColor: "blue" }}>
-      {tabs.map((tab) => (
+      {homeTabs.map((tab) => (
         <Tabs.Screen
           key={tab.name}
           name={tab.name}

@@ -16,27 +16,28 @@ function DrawerLayoutContent() {
         headerShown: true,
         swipeEdgeWidth: 0,
       }}
-      screenListeners={{
-        drawerItemPress: (e) => {
-          const route = e.target!.split('/').pop() || 'home';
-          setSelectedDrawer(route);
-        },
-      }}
     >
       <Drawer.Screen
-        name="(tabs)"
+        name="(home)"
         options={{
           title: "Home",
           drawerLabel: "Home",
         }}
       />
       <Drawer.Screen
-        name="d-settings"
+        name="(settings)"
         options={{
           title: "Impostazioni",
           drawerLabel: "Impostazioni",
         }}
       />
+        <Drawer.Screen
+            name="(profile)"
+            options={{
+                title: "Profilo",
+                drawerLabel: "Profilo",
+            }}
+        />
     </Drawer>
   );
 }
