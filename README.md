@@ -45,7 +45,7 @@ Initialize commitizen on project
 Now install Husky, commitlit cli, prettier and lint-staged
 
 ```bash
-  npm install -D husky @commitlint/{config-conventional, cli} prettier lint-staged
+  npm install @commitlint/cli @commitlint/config-conventional --save-dev
 ```
 
 Now configure the commitlint.config.js (if not exists, create it)
