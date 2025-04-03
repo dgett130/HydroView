@@ -37,6 +37,5 @@ yarn-error.*
 
 app-example
 
-commitlint.config.js
 ./package-lock.json
 ./yarn.lock
