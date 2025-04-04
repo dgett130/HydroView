@@ -64,7 +64,12 @@ module.exports = {
 };
 ```
 
-Configure staged-lint
+Install lint-staged
+```bash
+  npm install --save-dev lint-staged
+```
+
+Configure lint-staged
 
 ```json
 {
@@ -72,6 +77,15 @@ Configure staged-lint
   "*.{jsx, js}": ["eslint — max-warnings 0"]
 }
 ```
+
+Install Prettier and Eslint
+```bash
+  npm i prettier
+```
+```bash
+  npm init @eslint/config@latest
+```
+
 
 Install git-cz
 
