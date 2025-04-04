@@ -1,1 +1,2 @@
-echo "PRE-COMMIT HOOK"
+echo "START pre-commit"
+echo "FINISH pre-commit"

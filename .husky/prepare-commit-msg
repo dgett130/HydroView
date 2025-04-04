@@ -1,1 +1,3 @@
+echo "START prepare-commit-msg"
 exec < /dev/tty && git cz --hook || true
+echo "FINISH prepare-commit-msg"

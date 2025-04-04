@@ -10,7 +10,8 @@
     "ios": "DARK_MODE=media expo start --ios",
     "web": "DARK_MODE=media expo start --web",
     "test": "jest --watchAll",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commit": "git commit --no-edit"
   },
   "jest": {
     "preset": "jest-expo"
