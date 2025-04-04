@@ -44,12 +44,6 @@ Install Cli Tools of commitizen
   npm install commitizen -D -g
 ```
 
-Initialize commitizen on project
-
-```bash
-  commitizen init cz-conventional-changelog --save-dev --save-exact
-```
-
 Now install Husky, commitlit cli, prettier and lint-staged
 
 ```bash
