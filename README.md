@@ -15,6 +15,14 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
     npx expo start
    ```
+   
+## To Commit
+
+Type
+   ```bash
+      npm run commit
+   ```
+
 
 ## Get a fresh project
 
@@ -66,6 +74,8 @@ Configure staged-lint
 ```
 
 Install git-cz
+
+git-cz beautify commitizen process.
 
 ```bash
   npm install --save-dev git-cz
