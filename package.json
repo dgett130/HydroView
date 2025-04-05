@@ -83,10 +83,5 @@
     "*.{jsx, js}": [
       "eslint --max-warnings 0 --silent"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
