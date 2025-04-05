@@ -62,6 +62,7 @@
     "@types/jest": "^29.5.12",
     "@types/react": "~18.3.12",
     "@types/react-test-renderer": "^18.3.0",
+    "cz-git": "^1.11.1",
     "eslint": "^9.23.0",
     "eslint-plugin-react": "^7.37.5",
     "git-cz": "^4.9.0",
