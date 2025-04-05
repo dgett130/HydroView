@@ -44,6 +44,10 @@ Install Cli Tools of commitizen
   npm install commitizen -D -g
 ```
 
+Creation of changelog:
+npm i cz-conventional-changelog
+npm install -g conventional-changelog-cli
+
 Now install Husky, commitlit cli, prettier and lint-staged
 
 ```bash

@@ -1,7 +1,7 @@
 {
   "name": "hydroview",
   "main": "expo-router/entry",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Hydroview",
   "scripts": {
     "start": "expo start",
@@ -26,6 +26,7 @@
     "@react-navigation/drawer": "^7.1.1",
     "@react-navigation/native": "^7.0.0",
     "babel-plugin-module-resolver": "^5.0.2",
+    "cz-conventional-changelog": "^3.3.0",
     "expo": "^52.0.21",
     "expo-blur": "~14.0.1",
     "expo-constants": "~17.0.3",
@@ -75,11 +76,6 @@
     "typescript-eslint": "^8.29.0"
   },
   "private": true,
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "lint-staged": {
     "*.{css,less,scss,html,json,jsx,js}": [
       "prettier --write --silent"
@@ -87,5 +83,28 @@
     "*.{jsx, js}": [
       "eslint --max-warnings 0 --silent"
     ]
+  },
+  "config": {
+    "conventional-changelog": {
+      "header": "TEST CHANG"
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "disableScopeLowerCase": false,
+      "disableSubjectLowerCase": false,
+      "maxHeaderWidth": 100,
+      "maxLineWidth": 100,
+      "defaultType": "",
+      "defaultScope": "",
+      "defaultSubject": "",
+      "defaultBody": "",
+      "defaultIssues": "",
+      "types": {
+        "feat": {
+          "description": "A new feature",
+          "title": "Features"
+        }
+      }
+    }
   }
 }
