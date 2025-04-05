@@ -78,33 +78,10 @@
   "private": true,
   "lint-staged": {
     "*.{css,less,scss,html,json,jsx,js}": [
-      "prettier --write --silent"
+      "prettier --write"
     ],
     "*.{jsx, js}": [
       "eslint --max-warnings 0 --silent"
     ]
-  },
-  "config": {
-    "conventional-changelog": {
-      "header": "TEST CHANG"
-    },
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog",
-      "disableScopeLowerCase": false,
-      "disableSubjectLowerCase": false,
-      "maxHeaderWidth": 100,
-      "maxLineWidth": 100,
-      "defaultType": "",
-      "defaultScope": "",
-      "defaultSubject": "",
-      "defaultBody": "",
-      "defaultIssues": "",
-      "types": {
-        "feat": {
-          "description": "A new feature",
-          "title": "Features"
-        }
-      }
-    }
   }
 }
