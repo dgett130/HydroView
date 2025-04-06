@@ -21,7 +21,7 @@ const homeTabs = [
 
 export default function TabLayout() {
   console.log('Rendering TabLayout');
-  
+
   return (
     <Tabs screenOptions={{ headerShown: false, tabBarActiveTintColor: "blue" }}>
       {homeTabs.map((tab) => (
@@ -31,7 +31,7 @@ export default function TabLayout() {
           options={{
             title: tab.title,
             tabBarIcon: ({ color }) => (
-              <FontAwesome size={28} name={tab.icon as any} color={color} />
+              <FontAwesome size={28} name={tab.icon} color={color} />
             ),
           }}
         />

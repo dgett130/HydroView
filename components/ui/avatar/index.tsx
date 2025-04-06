@@ -77,10 +77,10 @@ type IAvatarProps = Omit<
 > &
   VariantProps<typeof avatarStyle>;
 
-const Avatar = React.forwardRef<
-  React.ElementRef<typeof UIAvatar>,
-  IAvatarProps
->(({ className, size = "md", ...props }, ref) => {
+const Avatar = () =>
+    // eslint-disable-next-line
+    React.forwardRef<React.ElementRef<typeof UIAvatar>,
+  IAvatarProps>(({ className, size = "md", ...props }, ref) => {
   return (
     <UIAvatar
       ref={ref}
@@ -94,6 +94,7 @@ const Avatar = React.forwardRef<
 type IAvatarBadgeProps = React.ComponentPropsWithoutRef<typeof UIAvatar.Badge> &
   VariantProps<typeof avatarBadgeStyle>;
 
+// eslint-disable-next-line
 const AvatarBadge = React.forwardRef<
   React.ElementRef<typeof UIAvatar.Badge>,
   IAvatarBadgeProps
@@ -119,6 +120,7 @@ type IAvatarFallbackTextProps = React.ComponentPropsWithoutRef<
   typeof UIAvatar.FallbackText
 > &
   VariantProps<typeof avatarFallbackTextStyle>;
+// eslint-disable-next-line
 const AvatarFallbackText = React.forwardRef<
   React.ElementRef<typeof UIAvatar.FallbackText>,
   IAvatarFallbackTextProps
@@ -139,10 +141,10 @@ const AvatarFallbackText = React.forwardRef<
     />
   );
 });
-
 type IAvatarImageProps = React.ComponentPropsWithoutRef<typeof UIAvatar.Image> &
   VariantProps<typeof avatarImageStyle>;
 
+// eslint-disable-next-line
 const AvatarImage = React.forwardRef<
   React.ElementRef<typeof UIAvatar.Image>,
   IAvatarImageProps
@@ -154,10 +156,10 @@ const AvatarImage = React.forwardRef<
       className={avatarImageStyle({
         class: className,
       })}
-      // @ts-expect-error
+      // @ts-expect-error general problem
       style={
         Platform.OS === "web"
-          ? // eslint-disable-next-line react-native/no-inline-styles
+          ?
             { height: "revert-layer", width: "revert-layer" }
           : undefined
       }
@@ -168,6 +170,7 @@ const AvatarImage = React.forwardRef<
 type IAvatarGroupProps = React.ComponentPropsWithoutRef<typeof UIAvatar.Group> &
   VariantProps<typeof avatarGroupStyle>;
 
+// eslint-disable-next-line
 const AvatarGroup = React.forwardRef<
   React.ElementRef<typeof UIAvatar.Group>,
   IAvatarGroupProps

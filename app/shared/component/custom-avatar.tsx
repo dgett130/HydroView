@@ -4,7 +4,6 @@ import {
   AvatarFallbackText,
   AvatarImage,
 } from "@/components/ui/avatar";
-import { ImageSourcePropType } from "react-native";
 
 interface CustomAvatarProps {
   fallbackText: string;
