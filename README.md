@@ -1,94 +1,159 @@
-# Welcome to your Expo app 👋
+# 💧 Hydroview
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Version](https://img.shields.io/github/v/release/dgett130/hydroview)
+![Build Status](https://img.shields.io/github/actions/workflow/status/dgett130/hydroview/ci.yml)
+![Coverage](https://img.shields.io/codecov/c/github/dgett130/hydroview)
+![License](https://img.shields.io/github/license/dgett130/hydroview)
+![Last Commit](https://img.shields.io/github/last-commit/dgett130/hydroview)
 
-## Get started
+**Hydroview** is a mobile application built with **React Native** using the **Expo** framework.  
+It’s designed to offer a clean and modern UI for managing and monitoring water usage or related utilities.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Getting Started
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-   
-## To Commit
-
-Type
-   ```bash
-      npm run commit
-   ```
-
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Install dependencies
 
 ```bash
-  npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Husky - commitlint - commitizen
-
-### Installation
-
-Install Cli Tools of commitizen
+### 2. Run the app
 
 ```bash
-  npm install commitizen -D -g
+npx expo start
 ```
 
-Creation of changelog:
-npm i cz-conventional-changelog
-npm install -g conventional-changelog-cli
-
-Now install Husky, commitlit cli, prettier and lint-staged
+You can also use:
 
 ```bash
-  npm install @commitlint/cli @commitlint/config-conventional --save-dev
+npm run android
+npm run ios
+npm run web
 ```
 
-Now configure the commitlint.config.js (if not exists, create it)
+---
 
-```js
-module.exports = {
-  extends: ["@commitlint/config-conventional"],
-};
-```
+## ✅ Commit Workflow
 
-Install lint-staged
+Hydroview uses **Commitizen** via **git-cz** for consistent, emoji-enhanced commits.
+
+### 🔧 Make a commit:
+
 ```bash
-  npm install --save-dev lint-staged
+npm run commit
 ```
 
-Configure lint-staged
+> This opens a guided prompt to write meaningful and standardized commits.
+
+---
+
+## 📄 Changelog Generation
+
+To generate or update the `CHANGELOG.md` based on conventional commits:
+
+```bash
+npm run changelog
+```
+
+This uses `cz-conventional-changelog` to parse commits and format the changelog file.
+
+---
+
+## 🧼 Reset the project (start fresh)
+
+If you want to clear the example code and start clean:
+
+```bash
+npm run reset-project
+```
+
+This moves starter code to an `app-example` folder and creates a new blank `app/` directory.
+
+---
+
+## 🛠️ Tooling Setup (Husky, Commitlint, Prettier, Lint-staged)
+
+The project includes a full Git hook setup to enforce code style and commit rules.
+
+### ✔️ Tools used:
+- [Husky](https://typicode.github.io/husky/) — Git hooks
+- [Commitlint](https://commitlint.js.org/) — Validates commit messages
+- [git-cz](https://www.npmjs.com/package/git-cz) — Commitizen wrapper with emoji support
+- [cz-conventional-changelog](https://www.npmjs.com/package/cz-conventional-changelog) — Changelog parser
+- [lint-staged](https://github.com/okonet/lint-staged) — Runs linters on staged files
+- [Prettier](https://prettier.io/) — Code formatter
+- [ESLint](https://eslint.org/) — Linter
+
+### 📦 Key dev dependencies installation (if needed):
+
+```bash
+npm install --save-dev husky lint-staged prettier eslint \
+@commitlint/cli @commitlint/config-conventional \
+cz-conventional-changelog conventional-changelog-cli \
+git-cz
+```
+
+---
+
+## 🧪 Lint & Format on Commit
+
+`lint-staged` runs Prettier and ESLint on staged files automatically via Husky.
+
+Configured in `package.json`:
 
 ```json
-{
-  "*.{css,less,scss,html,json,jsx,js}": ["prettier — write"],
-  "*.{jsx, js}": ["eslint — max-warnings 0"]
+"lint-staged": {
+  "*.{css,less,scss,html,json,jsx,js}": [
+    "prettier --write"
+  ],
+  "*.{jsx, js}": [
+    "eslint --max-warnings 0 --silent"
+  ]
 }
 ```
 
-Install Prettier and Eslint
-```bash
-  npm i prettier
-```
-```bash
-  npm init @eslint/config@latest
-```
+---
 
-
-Install git-cz
-
-git-cz beautify commitizen process.
+## ✨ Commit Example
 
 ```bash
-  npm install --save-dev git-cz
+✨ feat(auth): add biometric login support
+🐛 fix(ui): resolve layout bug on Android
+📝 docs(readme): update setup instructions
 ```
+
+---
+
+## 📁 Project Structure
+
+```
+/
+├── app/                  # Your actual app code lives here
+├── app-example/          # Preserved starter template after reset
+├── scripts/              # Internal dev scripts
+├── .husky/               # Git hooks
+├── CHANGELOG.md          # Auto-generated changelog
+├── README.md             # This file
+└── package.json
+```
+
+---
+
+## 📣 Contributing
+
+Feel free to fork, clone, and open issues or PRs if you have ideas or improvements!
+
+---
+
+## 🧑‍💻 Author
+
+Developed with ❤️ by dgett130
+
+---
+
+## 📜 License
+
+MIT — feel free to use and adapt!
+
