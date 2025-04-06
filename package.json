@@ -12,7 +12,7 @@
     "test": "jest --watchAll",
     "prepare": "husky",
     "commit": "cross-env CZ_RUNNING=true git cz",
-    "changelog": "cz changelog --no-staging --release-count=0"
+    "changelog": "node ./scripts/generate-changelog.mjs"
   },
   "jest": {
     "preset": "jest-expo"
@@ -65,6 +65,7 @@
     "@types/react-test-renderer": "^18.3.0",
     "conventional-changelog": "^6.0.0",
     "conventional-changelog-cli": "^5.0.0",
+    "conventional-changelog-writer": "^8.0.1",
     "cross-env": "^7.0.3",
     "cz-changelog": "^1.0.1",
     "cz-git": "^1.11.1",
@@ -92,7 +93,7 @@
   },
   "config": {
     "cz-changelog": {
-      "path": "cz-conventional-changelog"
+      "path": "./conventional-changelog-config.js"
     },
     "commitizen": {
       "path": "git-cz"
