@@ -12,7 +12,8 @@
     "test": "jest --watchAll",
     "prepare": "husky",
     "commit": "cross-env CZ_RUNNING=true git cz",
-    "changelog": "node ./scripts/generate-changelog.mjs"
+    "changelog": "node ./scripts/generate-changelog.mjs",
+    "lint": "eslint . --max-warnings=0"
   },
   "jest": {
     "preset": "jest-expo"

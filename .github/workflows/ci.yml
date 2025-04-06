@@ -13,8 +13,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
       - name: Check workflow
         run: echo "✅ Workflow attivo e funzionante!"
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Check code
+        run: echo "✅ Checkout effettuato con successo!"
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Check install
+        run: echo "✅ Installazione delle dependency effettuato con successo!"
+
+      - name: Run linter
+        run: npm run lint
+      - name: Check linter
+        run: echo "✅ Linter eseguito con successo!"
