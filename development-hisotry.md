@@ -52,13 +52,32 @@ Un documento vivo che raccoglie in ordine cronologico tutte le decisioni, integr
 
 ---
 
-## 🔮 Prossimi passi (v0.0.5)
-- Introduzione dei componenti `shadcn/ui`
-- Prima implementazione di UI interattive
-- Separazione ambienti dev/prod
-- Integrazione preview componenti e linting accessibilità
-- Gestione delle milestone successive con lo stesso rigore
+## 🔮 Prossimi passi (v0.0.5 — UI Base, Shadcn, Dark Mode e Dev Tools)
+
+### 🎯 Obiettivo:
+Iniziare a costruire l’interfaccia utente base del progetto, introducendo componenti riutilizzabili e preparando l’ambiente per sviluppi futuri (accessibilità, dark mode, preview, ecc.)
+
+### 🧩 Issue pianificati
+
+- 💡 **Setup Shadcn UI su React Native + Expo**  
+  Integrazione iniziale, verifica compatibilità, preset di stile e tema.
+
+- 🧩 **Creazione primi componenti base (Button, Input, Card)**  
+  Implementazione con `shadcn/ui`, struttura `components/ui`.
+
+- 🌗 **Dark mode toggle / theme provider**  
+  Gestione modalità dark/light + override media query.
+
+- 🛠️ **Separazione ambienti `dev` / `prod`**  
+  Setup `.env` e comportamenti specifici.
+
+- 👀 **Preview dev di componenti UI (tipo Storybook o simile)**  
+  Ambiente di test visivo per i componenti condivisi.
+
+- ♿ **Integrazione lint accessibilità**  
+  Regole ESLint o strumenti per controllo accessibilità su React Native.
+
+**Milestone creata il:** 6 aprile 2025
 
 ---
-
 **Aggiornato al:** 6 aprile 2025
