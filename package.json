@@ -13,10 +13,8 @@
     "prepare": "husky",
     "commit": "cross-env CZ_RUNNING=true git cz",
     "changelog": "node ./scripts/generate-changelog.mjs",
-    "lint": "eslint . --max-warnings=0"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "lint": "eslint . --max-warnings=0",
+    "coverage": "jest"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",

@@ -30,3 +30,18 @@ jobs:
         run: npm run lint
       - name: Check linter
         run: echo "✅ Linter eseguito con successo!"
+
+      - name: Run Jest coverage
+        run: npm run coverage
+      - name: Check Jest coverage
+        run: echo "✅ Jest Coverage eseguito con successo!"
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          #: ${{ secrets.CODECOV_TOKEN }} # solo se il repo è privato
+          files: ./coverage/lcov.info
+          flags: unittests
+          name: codecov-report
+      - name: Check codecov
+        run: echo "✅ Coverage caricato con successo!"
