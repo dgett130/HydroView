@@ -1,32 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
-import {
-  Avatar,
-  AvatarBadge,
-  AvatarFallbackText,
-  AvatarImage,
-} from "@/components/ui/avatar";
+import { StyleSheet } from "react-native";
 import { HStack } from "@/components/ui/hstack";
 import { Box } from "@/components/ui/box";
 import {
   useSharedValue,
-  useAnimatedStyle,
   withTiming,
 } from "react-native-reanimated";
-import Animated from "react-native-reanimated";
 import { useEffect } from "react";
 import CustomAvatar from "@/app/shared/component/custom-avatar";
 import { VStack } from "@/components/ui/vstack";
 
-const SIZE = 100.0;
 
 export default function HomeSection() {
   const progress = useSharedValue(1);
-  const reanimatedStyle = useAnimatedStyle(() => {
-    return {
-      opacity: progress.value,
-      transform: [{ scale: 1 }],
-    };
-  }, []);
 
   useEffect(() => {
     progress.value = withTiming(0.5, { duration: 4000 });

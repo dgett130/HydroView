@@ -15,7 +15,7 @@ conventionalChangelog({
     releaseCount: 0,
 }, null, null, null, {
     headerPartial: '## 🎉 Hydroview v{{version}}\n\n_Release date: {{date}}_\n',
-    transform: (commit, context) => {
+    transform: (commit) => {
         const typeMap = {
             feat: '✨ Features',
             chore: '🔧 Chores',

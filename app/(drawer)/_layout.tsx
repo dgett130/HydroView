@@ -1,15 +1,7 @@
 import { Drawer } from "expo-router/drawer";
-import {
-  Avatar,
-  AvatarBadge,
-  AvatarFallbackText,
-  AvatarImage,
-} from "@/components/ui/avatar";
-import { DrawerProvider, useDrawer } from "@/app/context/DrawerContext";
+import { DrawerProvider } from "@/app/context/DrawerContext";
 
 function DrawerLayoutContent() {
-  const { setSelectedDrawer } = useDrawer();
-
   return (
     <Drawer
       screenOptions={{
