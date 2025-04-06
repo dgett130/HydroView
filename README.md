@@ -3,7 +3,7 @@
 
 ![Version](https://img.shields.io/github/v/release/dgett130/hydroview)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/dgett130/hydroview/ci.yml)
-![Coverage](https://img.shields.io/codecov/c/github/dgett130/hydroview)
+[![codecov](https://codecov.io/gh/dgett130/HydroView/branch/master/graph/badge.svg)](https://codecov.io/gh/dgett130/HydroView)
 ![License](https://img.shields.io/github/license/dgett130/hydroview)
 ![Last Commit](https://img.shields.io/github/last-commit/dgett130/hydroview)
 
