@@ -1,7 +1,7 @@
 # 💧 Hydroview
 
 
-[![GitHub release](https://img.shields.io/github/v/release/dgett130/HydroView)](https://github.com/dgett130/HydroView/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/tag/dgett130/HydroView?label=release)](https://github.com/dgett130/HydroView/releases)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/dgett130/hydroview/ci.yml)
 [![codecov](https://codecov.io/gh/dgett130/HydroView/branch/master/graph/badge.svg)](https://codecov.io/gh/dgett130/HydroView)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
