@@ -2,6 +2,7 @@
 
 _Release date: 2025-04-06_
 
+* feat: 🎸 add changelog custom configuration ([16b152323c6c2fa2cce3f98acf4aa24aa0b3ce2f](https://github.com/dgett130/HydroView/commit/16b152323c6c2fa2cce3f98acf4aa24aa0b3ce2f))
 * feat: 🎸 add lint-staged and configured prettier and eslint ([f17688ab9c0f01d23b3b74d6a699916e1042cf60](https://github.com/dgett130/HydroView/commit/f17688ab9c0f01d23b3b74d6a699916e1042cf60))
 * feat: 🎸 add npm run commit command ([327f15f8cf118069dae8ac431c323ad403140d38](https://github.com/dgett130/HydroView/commit/327f15f8cf118069dae8ac431c323ad403140d38))
 * feat: 🎸 add pre-commit lint-staged ([6c9b805b964c7e510e8a025519411a443d4eb7f7](https://github.com/dgett130/HydroView/commit/6c9b805b964c7e510e8a025519411a443d4eb7f7))
