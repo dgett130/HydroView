@@ -9,6 +9,7 @@ export default defineConfig([
         ignores: [
             'tailwind.config.js',
             'scripts/generate-changelog.mjs',
+            'coverage/**',
         ]
     },
     js.configs.recommended, // regole JS base
